@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Image Generator Section */
+.image-generator {
+  background: linear-gradient(135deg, #001F3F, #556a7c); /* Updated gradient color */
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.image-generator .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.prompt-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.generate-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #fff; /* Updated border style */
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Glow effect */
+}
+
+/* Image Gallery Section */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.3s ease; /* Transition effect */
+}
+
+.img-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: 0 0 20px rgba(92, 5, 132, 0.8); /* Lightening glow effect on hover */
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease; /* Transition effect */
+}
+
+.img-card:hover img {
+  filter: brightness(80%); /* Dim effect on hover */
+}
+
+.download-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease; /* Transition effect */
+}
+
+.download-btn:hover {
+  box-shadow: 0 0 10px 5px rgba(210, 217, 8, 0.886); /* Glow effect on click */
+}
+
+
+/* Additional Content Section */
+.additional-content {
+  padding: 50px 0;
+  text-align: center;
+  margin: 0 auto; /* Center the additional content horizontally */
+  max-width: 800px; /* Limit the width of the additional content */
+}
+
+.additional-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.additional-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .image-generator .content {
+    padding: 0 20px;
+  }
+
+  .img-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .prompt-input,
+  .generate-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .img-card {
+    width: calc(100% - 20px);
+  }
+}
