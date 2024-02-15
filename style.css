@@ -9,7 +9,7 @@ body {
 
 /* Image Generator Section */
 .image-generator {
-  background: linear-gradient(135deg, #001F3F, #556a7c); /* Updated gradient color */
+  background: linear-gradient(135deg, #001F3F, #6b7a87); /* Updated gradient color */
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -69,11 +69,12 @@ body {
   overflow: hidden;
   border-radius: 20px;
   transition: all 0.3s ease; /* Transition effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0); /* Initial box shadow */
 }
 
 .img-card:hover {
   transform: scale(1.05); /* Scale effect on hover */
-  box-shadow: 0 0 20px rgba(92, 5, 132, 0.8); /* Lightening glow effect on hover */
+  box-shadow: 0 0 20px rgba(158, 29, 29, 0.5); /* Lightening glow effect on hover */
 }
 
 .img-card img {
@@ -100,7 +101,6 @@ body {
   box-shadow: 0 0 10px 5px rgba(210, 217, 8, 0.886); /* Glow effect on click */
 }
 
-
 /* Additional Content Section */
 .additional-content {
   padding: 50px 0;
@@ -117,6 +117,23 @@ body {
 .additional-text {
   font-size: 1rem;
   margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #001F3F; /* Match with the background color of image generator section */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
 }
 
 /* Responsive Styling */
@@ -148,4 +165,52 @@ body {
   .img-card {
     width: calc(100% - 20px);
   }
+}
+
+.additional-text{
+  color: #074583;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Social Icons Styles */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.fab fa-instagram{
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(166, 211, 6, 0.5);
+}
+
+.fab fa-github{
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(205, 255, 25, 0.5);
 }
