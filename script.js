@@ -31,7 +31,7 @@ try {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer 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",
         
     },
     body: JSON.stringify({
