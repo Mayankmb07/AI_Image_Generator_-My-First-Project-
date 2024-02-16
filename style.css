@@ -74,7 +74,7 @@ body {
 
 .img-card:hover {
   transform: scale(1.05); /* Scale effect on hover */
-  box-shadow: 0 0 20px rgba(158, 29, 29, 0.5); /* Lightening glow effect on hover */
+  box-shadow: 0 0 20px rgba(197, 51, 213, 0.844); /* Lightening glow effect on hover */
 }
 
 .img-card img {
