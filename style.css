@@ -191,7 +191,7 @@ body {
   min-height: 100vh;
 }
 
-/* Social Icons Styles */
+/* Social Icons Styles
 .social-icons {
   position: fixed;
   bottom: 20px;
@@ -213,4 +213,4 @@ body {
 .fab fa-github{
   transform: scale(1.05); 
   box-shadow: 0 0 20px rgba(205, 255, 25, 0.5);
-}
+} */
