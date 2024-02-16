@@ -34,7 +34,7 @@ const generateAiImages = async (userPrompt, userImgQuantity) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${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}`,
+        "Authorization": `Bearer ${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}`,
       },
       body: JSON.stringify({
         prompt: userPrompt,
